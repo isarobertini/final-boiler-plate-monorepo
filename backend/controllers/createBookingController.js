@@ -39,7 +39,6 @@ export const createBooking = async (req, res) => {
 
         const savedBooking = await booking.save();
 
-
         res.status(201).json(savedBooking);
     } catch (error) {
         // Utilize the existing handleErrors function

@@ -6,7 +6,6 @@ import * as getHandledBookingsController from '../controllers/getHandledBookings
 import * as getUnhandledBookingsController from '../controllers/getUnhandledBookingsController';
 import * as markAsHandledBookingController from '../controllers/markashandledBookingController';
 import { authenticateUser } from '../middleware/authenticateUser';
-const { handleDisableDate } = require('../controllers/handleDisableDateController');
 
 const router = express.Router();
 
@@ -18,8 +17,5 @@ router.get('/unhandledBookings', authenticateUser, getUnhandledBookingsControlle
 router.get('/handledBookings/bookingsByDate', authenticateUser, getHandledBookingsController.getHandledBookingsByDate);
 router.delete('/deleteBooking/:id', authenticateUser, deleteBookingController.deleteBookingById);
 router.delete('/deleteAll', authenticateUser, deleteBookingController.deleteAllBookings);
-
-// Route for handling disabling date
-router.put('/:bookingId/disableDate', handleDisableDate); // Updated usage
 
 export default router;
