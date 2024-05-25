@@ -66,7 +66,7 @@ export const SurfLessons = () => {
 
                 <SubHeadingComponent className="text-pink-500 lg:px-32" text="Our private lessons are 1,5 hours long" />
 
-                <ParagraphComponent className="py-12 lg:my-14" text="Each lesson starts with 20-30 minute theory and warm-up on land. Here we will also talk oceansafety, conditions, technique, etiquette and practice our movements on land before heading out in the water. We then spend the rest of our time in the water catching and riding waves and improving your skills." />
+                <ParagraphComponent className="py-12 lg:my-14" text="Each lesson starts with a 20-30 minute theory and warm-up on land. Here we will also talk ocean safety, conditions, technique, etiquette, and practice our movements on land before heading out into the water. We then spend the rest of our time in the water catching and riding waves and improving your skills." />
 
                 <Slider />
 
@@ -104,7 +104,7 @@ export const SurfLessons = () => {
                 </div>
 
 
-                <ParagraphComponent className="py-12" text="We schedule our lessons based off the tides and conditions of the day to ensure that you have the best possible conditions for your personalised lesson. We also have different kind of surf-boards and will be able to offer you one that suits your level." />
+                <ParagraphComponent className="py-12" text="We schedule our lessons based on the tides and conditions of the day to ensure that you have the best possible conditions for your personalized lesson. We also have different kinds of surfboards and will be able to offer you one that suits your level." />
 
 
                 <SubHeadingComponent className="pb-12 text-pink-500" text="Pricing for our lessons:" />

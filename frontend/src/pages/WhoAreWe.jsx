@@ -77,12 +77,7 @@ export const WhoAreWe = () => {
                     <SubHeadingComponent className="mt-10 mx-6 md:text-5xl text-pink-500" text="Get to know us!" />
 
                     <div className="text-left justify-center mt-5 md:mt-10 md:mx-6">
-                        <ParagraphComponent text="Tuanis Surf School is a small family owned business at Samara Beach founded
-                        by Sofie, who is passionated about sharing her love for surfing and the ocean.
-                        Our team of employees are all about the good life and we think that you are
-                        too. We are lucky enough to get guests from all over the world who come
-                        together to surf and enjoy our little piece of paradise. At Tuanis Surf School we
-                        have a great family vibe where you will instantly feel a sense of belonging." />
+                        <ParagraphComponent text="Tuanis Surf School is a small family-owned business at Samara Beach founded by Sofie, who is passionate about sharing her love for surfing and the ocean. Our team of employees is all about the good life, and we think that you are too. We are fortunate enough to host guests from all over the world who come together to surf and enjoy our little piece of paradise. At Tuanis Surf School, we have a great family vibe where you will instantly feel a sense of belonging." />
                     </div>
 
                     {/* Icons */}
@@ -140,13 +135,7 @@ export const WhoAreWe = () => {
                             <SubHeadingComponent className="text-pink-500" text="We offer surf-lessons for all levels at:" />
                             <SubHeadingComponent className="md:pb-5  text-pink-500" text="PLAYA SAMARA" />
 
-                            <ParagraphComponent className="py-12 text-left lg:px-10" text="Our focus is to offer a safe place where everyone feels included, accepted and
-                            comfortable while having the best time learning how to surf. Whatever your
-                            level is, we promise to elevate your surfing to the next one. We work hard to
-                            make sure that your safety is our top priority and that you learn the rules and
-                            etiquette of surfing while mastering how to ride the waves.
-                            Join us for some legendary and dreamy surroundings at beautiful Samara
-                            Beach, Costa Rica." />
+                            <ParagraphComponent className="py-12 text-left lg:px-10" text="Our focus is to offer a safe place where everyone feels included, accepted, and comfortable while having the best time learning how to surf. Whatever your level is, we promise to elevate your surfing to the next one. We work hard to make sure that your safety is our top priority and that you learn the rules and etiquette of surfing while mastering how to ride the waves. Join us for legendary and dreamy surroundings at beautiful Samara Beach, Costa Rica." />
                         </div>
 
                         <div>
@@ -162,12 +151,7 @@ export const WhoAreWe = () => {
                         <div>
                             <SubHeadingComponent className="md:pb-5  text-pink-500" text="Female instructors" />
 
-                            <ParagraphComponent className="py-12 text-left lg:px-10" text="Our focus is to offer a safe place where everyone feels included, accepted and comfortable while having the best time learning how to surf. Whatever your
-                            level is, we promise to elevate your surfing to the next one. We work hard to
-                            make sure that your safety is our top priority and that you learn the rules and
-                            etiquette of surfing while mastering how to ride the waves.
-                            Join us for some legendary and dreamy surroundings at beautiful Samara
-                            Beach, Costa Rica." />
+                            <ParagraphComponent className="py-12 text-left lg:px-10" text="We proudly work with female instructors, and the Surf School is female-owned. We aim to inspire more girls and women to start surfing and to build a local surf community where female surfers can inspire each other while feeling comfortable and safe surfing together. When booking with us, you can request to have a female instructor for your lesson. This Surf School strives to be inclusive for everyone. Throughout our years, we have introduced hundreds of women to surfing and helped them make a lasting connection to the ocean through the joys of the waves." />
                         </div>
 
                         <div className="">

@@ -80,9 +80,7 @@ export const Home = () => {
                     <div className="bg-backgroundPink mx-6 mt-10 md:mx-10 lg:text-center">
                         <SubHeadingComponent className="px-6 md:text-5xl lg:p-16 text-pink-500" text="We believe that the most important part of surfing is to have fun. If you’re not having fun, you’re doing it wrong!" />
 
-                        <ParagraphComponent className="mt-10" text="Tuanis Surf School is a small family owned business at Samara Beach founded
-                        by Sofie, who is passionated about sharing her love for surfing and the ocean.
-                        Our team of instructors are all about the good life and we think that you are too. We are lucky enough to get guests from all over the world who come together to surf and enjoy our little piece of paradise. At Tuanis Surf School we have a great family vibe where you will instantly feel a sense of belonging." />
+                        <ParagraphComponent className="mt-10" text="Tuanis Surf School is a small family-owned business at Samara Beach founded by Sofie, who is passionate about sharing her love for surfing and the ocean. Our team of instructors is all about the good life, and we think that you are too. We are lucky enough to have guests from all over the world who come together to surf and enjoy our little piece of paradise. At Tuanis Surf School, we have a great family vibe where you will instantly feel a sense of belonging." />
                     </div>
 
                 </Fade>
@@ -120,7 +118,7 @@ export const Home = () => {
                     {/* photography */}
                     <div className="mt-10 grid gap-2 md:grid-cols-1 lg:grid-cols-2">
                         <div className="flex flex-col justify-center items-center mb-16">
-                            <SubHeadingComponent className="px-6 md:text-5xl font-josefin-sans lg:p-16 text-pink-500" text="SURF PHOTOGRAPHY! Let us document your jurney!" />
+                            <SubHeadingComponent className="px-6 md:text-5xl font-josefin-sans lg:p-16 text-pink-500" text="SURF PHOTOGRAPHY! Let us document your journey!" />
                             <BtnComponent label="Read about our Surf Photography" onClick={handleWhoAreWenClick} />
                         </div>
                         <PhotoComponent className="rounded-md" src={surfPhotography} alt="Home" />
