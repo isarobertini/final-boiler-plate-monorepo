@@ -18,7 +18,7 @@ export const NavigationMenu = () => {
     return (
         <div className={`h-24 font-josefin-sans text-lg bg-customPink bg-opacity-70 flex items-center justify-between px-8 sticky top-0 z-10`}>
             {/* Logo */}
-            <a href="/home">
+            <a href="/">
                 <AnimatedLogo />
             </a>
 

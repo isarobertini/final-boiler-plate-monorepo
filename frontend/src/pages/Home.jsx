@@ -82,7 +82,7 @@ export const Home = () => {
 
                         <ParagraphComponent className="mt-10" text="Tuanis Surf School is a small family owned business at Samara Beach founded
                         by Sofie, who is passionated about sharing her love for surfing and the ocean.
-                        Our team of employees are all about the good life and we think that you are too. We are lucky enough to get guests from all over the world who come together to surf and enjoy our little piece of paradise. At Tuanis Surf School we have a great family vibe where you will instantly feel a sense of belonging." />
+                        Our team of instructors are all about the good life and we think that you are too. We are lucky enough to get guests from all over the world who come together to surf and enjoy our little piece of paradise. At Tuanis Surf School we have a great family vibe where you will instantly feel a sense of belonging." />
                     </div>
 
                 </Fade>
@@ -102,7 +102,7 @@ export const Home = () => {
                     {/* tripadvisor */}
                     <div className="mt-10 grid gap-2 md:grid-cols-1 lg:grid-cols-2 justify-center items-center">
                         <div className="flex flex-col justify-center items-center">
-                            <SubHeadingComponent className="px-6 md:text-5xl font-josefin-sans lg:p-16 text-pink-500" text='"...if I had to take the trip again I would pick Tuanis surf school everytime!"' />
+                            <SubHeadingComponent className="px-6 md:text-5xl font-josefin-sans lg:p-16 text-pink-500" text='"...if I had to take the trip again I would pick Tuanis surf school every time!"' />
                             <BtnComponent label="Read our reviews on TripAdvisor" onClick={handleTripAdvisorClick} />
                         </div>
                         <PhotoComponent className="rounded-md mt-10" src={home2} alt="Home" />

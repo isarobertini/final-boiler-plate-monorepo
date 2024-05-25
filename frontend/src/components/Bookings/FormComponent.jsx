@@ -178,21 +178,6 @@ export const FormComponent = ({ form, index, setForms, minDate, errors, disabled
                 />
             </div>
 
-            {/* Form Date 
-                <MyDatePicker
-                    label="Requested date?*"
-                    id={dateId}
-                    selected={form.date}
-                    onChange={(date) =>
-                        setForms((prevForms) =>
-                            prevForms.map((f, i) => (i === index ? { ...f, date: date || null } : f))
-                        )
-                    }
-                    minDate={minDate}
-                    error={errors.date}
-                    excludeDates={disabledDates}
-                />
-            */}
 
             {/* Checkbox Surf Level beginner */}
             <div className="mb-2">

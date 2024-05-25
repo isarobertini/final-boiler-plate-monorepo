@@ -3,91 +3,65 @@ import { formatDistanceToNow, isValid } from 'date-fns';
 import { userStore } from './userStore';
 
 const useBookingStore = create((set) => ({
-    // State to hold the list of bookings
     bookings: [],
-    // State to indicate when an operation (e.g., API request) is in progress
     loading: false,
-    // State to capture any errors that occur during operations
     error: null,
-    // State to hold user authentication status
     isAuthenticated: userStore.isAuthenticated,
 
-    // Utility function to set the error state
     setError: (error) => set({ error }),
 
-    // Action to check if the user is authenticated
     checkAuthentication: () => {
         set({ isAuthenticated: userStore.isAuthenticated });
     },
 
-    // Action to handle the submission of bookings
     submitBookings: async (forms, isGroupBooking, groupID) => {
-        try {
-            const startTime = Date.now();
+        set({ loading: true, error: null });
 
-            // Use Promise.all to await all form submissions concurrently
+        try {
             const responses = await Promise.all(
                 forms.map(async (form) => {
-                    try {
-                        const response = await fetch(`${import.meta.env.VITE_API_URL}/booking`, {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify({
-                                name: form.name,
-                                age: form.age,
-                                weight: form.weight,
-                                height: form.height,
-                                film: form.film,
-                                droneVideos: form.droneVideos,
-                                photo: form.photo,
-                                email: form.email,
-                                phonenumber: form.phonenumber,
-                                message: form.newPost,
-                                // date: form.date.toISOString(),
-                                beginner: form.beginner,
-                                intermediate: form.intermediate,
-                                advanced: form.advanced,
-                                errorMessage: "",
-                                createdAt: Date.now(),
-                                groupID: isGroupBooking ? groupID : null,
-                            }),
-                        });
+                    const response = await fetch(`${import.meta.env.VITE_API_URL}/booking`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            name: form.name,
+                            age: form.age,
+                            weight: form.weight,
+                            height: form.height,
+                            film: form.film,
+                            droneVideos: form.droneVideos,
+                            photo: form.photo,
+                            email: form.email,
+                            phonenumber: form.phonenumber,
+                            message: form.newPost,
+                            beginner: form.beginner,
+                            intermediate: form.intermediate,
+                            advanced: form.advanced,
+                            createdAt: Date.now(),
+                            groupID: isGroupBooking ? groupID : null,
+                        }),
+                    });
 
-                        if (!response.ok) {
-                            throw new Error(`Network response was not ok. Status: ${response.status}`);
-                        }
-
-                        const data = await response.json();
-                        return data;
-                    } catch (error) {
-                        console.error("Error submitting form:", error);
-                        // Handle form submission error, e.g., return a placeholder error response
-                        return { error: true };
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || `Network response was not ok. Status: ${response.status}`);
                     }
+
+                    return await response.json();
                 })
             );
 
-            const endTime = Date.now();
-            const actualLoadingTime = endTime - startTime;
-            const minLoadingTime = 4000;
-            const delay = Math.max(minLoadingTime, actualLoadingTime);
+            set({
+                bookings: responses,
+                loading: false,
+            });
 
-            setTimeout(() => {
-                set((state) => ({
-                    ...state,
-                    bookings: [],  // Update this with the new bookings if needed
-                }));
-            }, delay);
-
-            // Return the array of responses to the caller
             return responses;
         } catch (error) {
             console.error("Error submitting forms:", error);
-            // Show a general error message to the user
-            alert("Unable to send request now. Please try again later!");
-            // Return an empty array to indicate an error
+            set({ error: "Unable to send request now. Please try again later!", loading: false });
             return [];
         }
     },
@@ -191,6 +165,7 @@ const useBookingStore = create((set) => ({
             // Handle errors during the fetchBookings process
             set({ error: error.message, loading: false });
             console.error('Error fetching bookings:', error);
+            alert('Error fetching bookings:', error);
         }
     },
 
