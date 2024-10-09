@@ -114,8 +114,8 @@ export const SurfLessons = () => {
                     <div className="flex flex-col items-center justify-center md:mt-10">
                         <div className="p-4 border-2 border-customPink w-60 flex flex-col items-center justify-center rounded-t-lg">
                             <SubHeadingComponent className="my-10" text="Book a package of one lesson:" />
-                            <ParagraphComponent text="Group Lesson: $55 (a minimum of 2 people per group)." />
-                            <ParagraphComponent text="Private Lesson: $75 for one person" />
+                            <ParagraphComponent text="Group Lesson: $60 (a minimum of 2 people per group)." />
+                            <ParagraphComponent text="Private Lesson: $80 for one person" />
                         </div>
                         <div className="p-4 bg-customPink w-60 flex items-center justify-center rounded-b-lg">
                             <PhotoComponent className="h-20 w-20" src={GiftIcon} alt="Gift icon" />
@@ -125,8 +125,8 @@ export const SurfLessons = () => {
                     <div className="flex flex-col items-center justify-center mt-10">
                         <div className="p-4 border-2 border-customPink w-60 flex flex-col items-center justify-center rounded-t-lg">
                             <SubHeadingComponent className="my-10" text="Book a package of 3 lessons:" />
-                            <ParagraphComponent text="3 Group Lessons: $45x3 = $135 in total." />
-                            <ParagraphComponent text="3 Private Lessons: $65x3 = $195 in total" />
+                            <ParagraphComponent text="3 group-lessons: $55x3 = $165" />
+                            <ParagraphComponent text="3 private-lessons: $75x3 = $225" />
                         </div>
                         <div className="p-4 bg-customPink w-60 flex items-center justify-center rounded-b-lg">
                             <PhotoComponent className="h-20 w-20" src={GiftIcon} alt="Gift icon" />
@@ -135,8 +135,8 @@ export const SurfLessons = () => {
                     <div className="flex flex-col items-center justify-center mt-10">
                         <div className="p-4 border-2 border-customPink w-60 flex flex-col items-center justify-center rounded-t-lg">
                             <SubHeadingComponent className="my-10" text="Book a package of 6 lessons:" />
-                            <ParagraphComponent text="6 Group Lessons: $40x6 = $240 in total." />
-                            <ParagraphComponent text="6 Private Lessons: $60x6 = $360 in total." />
+                            <ParagraphComponent text="6 group-lessons: $50x6 = $300" />
+                            <ParagraphComponent text="6 private-lesson: $70x6 = $420" />
                         </div>
                         <div className="p-4 bg-customPink w-60 flex items-center justify-center rounded-b-lg">
                             <PhotoComponent className="h-20 w-20" src={GiftIcon} alt="Gift icon" />
