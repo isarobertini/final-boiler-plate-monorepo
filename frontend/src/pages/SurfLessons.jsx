@@ -106,6 +106,12 @@ export const SurfLessons = () => {
 
                 <ParagraphComponent className="py-12" text="We schedule our lessons based on the tides and conditions of the day to ensure that you have the best possible conditions for your personalized lesson. We also have different kinds of surfboards and will be able to offer you one that suits your level." />
 
+                <SubHeadingComponent className="pb-12 text-pink-500" text="Activity description" />
+                <ParagraphComponent text="We always start the surf-lesson with some theory on land. Here we will talk about surfing
+on your level, safety, discuss your goals, practice the movements and have a warm-up
+before heading out in the water to catch waves. Our focus during the lesson is to teach you
+on a level that is suitable for you, so that you feel comfortable and have the best time." />
+
 
                 <SubHeadingComponent className="pb-12 text-pink-500" text="Pricing for our lessons:" />
 
@@ -143,6 +149,8 @@ export const SurfLessons = () => {
                         </div>
                     </div>
                 </div>
+                <ParagraphComponent className="py-12" text="All of our packages needs to be paid in full up-front and the dates for the lessons need to
+be scheduled at once." />
 
                 <div className="flex items-center justify-center p-4 m-6">
                     <BtnComponent label="Book Now" onClick={handleButtonClick} />
