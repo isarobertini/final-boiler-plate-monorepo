@@ -61,18 +61,21 @@ export const BookNow = () => {
                         <a className="px-6 text-2xl md:text-5xl lg:p-16 text-pink-500 text-center hover:text-fuchsia-900 transition duration-300 ease-in-out" href="mailto:tuanissurfschool@gmail.com">tuanissurfschool@gmail.com</a>
 
                     </Fade>
+                    {/* This is not used due to slow backend 
                     <Fade>
                         <SubHeadingComponent className="px-6 md:text-3xl pb-10 text-pink-500" text="Or scroll down and send us a booking request -we will get back to you!" />
                     </Fade>
+                    */}
                 </div>
 
             </Fade>
-
+            {/* This is not used due to slow backend 
             <Fade>
                 <div className="my-10 mx-6">
                     <PostBookingComponent />
                 </div>
             </Fade>
+ */}
             <FooterComponent />
         </div>
     )
