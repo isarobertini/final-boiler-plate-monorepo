@@ -1,3 +1,2 @@
-# Final Boiler Project
-
-Detailed info on how to consume this boilerplate will be updated shortly...
+# Final Boiler Project- Tuanis Surf School
+Live demo: https://tuanissurfschool.com/
